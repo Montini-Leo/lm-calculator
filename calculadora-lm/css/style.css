@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin Sans, sans-serif;
+}
+
+body {
+    background-color: #73daff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 77px;
+    border-bottom-right-radius: 77px;
+    box-shadow: 6px 6px #888;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation {
+    min-height: 1.6em;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#previous-operation {
+    color: #841eaa;
+}
+
+#current-operation {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #e3e3e3;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#buttons-container .number {
+    background-color: rgb(221, 169, 253);
+}
+
+#buttons-container button:hover {
+    background-color: rgb(226, 98, 255);
+    border-color: transparent;
+}
+
+#buttons-container #equal {
+    grid-column: span 2;
+    background-color: rgb(110, 195, 255);
+    border-bottom-right-radius: 100px;
+}
+
+#buttons-container #equal:hover {
+    background-color: rgb(142, 122, 255);
+}
